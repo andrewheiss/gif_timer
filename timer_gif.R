@@ -4,6 +4,8 @@ library(dplyr)
 library(lubridate)
 library(ggplot2)
 
+secs <- 1 * 60
+
 # Blank ggplot theme
 blank_theme <- theme_bw() + 
   theme(line = element_blank(), rect = element_blank(),
@@ -14,7 +16,7 @@ blank_theme <- theme_bw() +
 
 # Create data frame of all the times to display
 df <- data_frame(timer = rev(format(seq(ymd_hms("2015-04-08 00:00:00"), 
-                                        ymd_hms("2015-04-08 00:00:00") + minutes(1), 
+                                        ymd_hms("2015-04-08 00:00:00") + seconds(secs), 
                                         by="sec"), "%M:%S")))
 
 # Start recording
