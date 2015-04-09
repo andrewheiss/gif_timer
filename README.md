@@ -6,6 +6,6 @@ These two scripts use ImageMagick to generate a GIF that lasts any arbitrary dur
 
 And here they are in action:
 
-![https://raw.githubusercontent.com/andrewheiss/gif_timer/master/timer_r.gif](R version)
+![R version](https://raw.githubusercontent.com/andrewheiss/gif_timer/master/timer_r.gif)
 
-![https://raw.githubusercontent.com/andrewheiss/gif_timer/master/timer_python.gif](Python version)
+![Python version](https://raw.githubusercontent.com/andrewheiss/gif_timer/master/timer_python.gif)
