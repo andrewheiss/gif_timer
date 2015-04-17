@@ -10,7 +10,7 @@ library(ggplot2)
 # ----------
 # Settings
 # ----------
-secs <- 1 * 5
+secs <- 1 * 60
 extra.secs <- 5
 font.color <- "black"
 font.size <- 50
@@ -44,7 +44,8 @@ animation.frame <- function(df) {
             plot.title = element_blank(), axis.title = element_blank(),
             plot.margin = structure(c(0, 0, -1, -1), unit = "lines", 
                                     valid.unit = 3L, class = "unit"),
-            panel.background = element_rect(fill=timer.bg.color, colour=NA))
+            panel.background = element_rect(fill=timer.bg.color),
+            panel.border=element_blank())
     print(p)
   })
 }
