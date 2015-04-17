@@ -56,6 +56,17 @@ saveGIF(animation.frame(df), interval=frame.duration, movie.name=filename,
 
 
 #-------------------------------------------------------------------------------
+# TODO: This almost seems to be the only way to get transparency to work. 
+# ggsave can handle transparency, but I don't want to save anything. CairoPNG 
+# also tries to save to file. If I can get CairoPNG or ggsave to save to an 
+# object, not a file, we'll be good.
+# library(Cairo)
+# CairoPNG(bg = "transparent")
+# qplot(1:3, 1:3)
+# dev.off()
+#-------------------------------------------------------------------------------
+
+#-------------------------------------------------------------------------------
 # Procedural way, with explicit ani.record() calls
 # # Start recording
 # ani.record(reset=TRUE)
@@ -71,3 +82,4 @@ saveGIF(animation.frame(df), interval=frame.duration, movie.name=filename,
 # 
 # saveGIF(ani.replay(), interval=1, movie.name="timer_r1.gif", 
 #         ani.width=400, ani.height=200, loop=1) 
+#-------------------------------------------------------------------------------
